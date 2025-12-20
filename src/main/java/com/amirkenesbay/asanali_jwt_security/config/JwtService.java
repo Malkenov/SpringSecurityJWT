@@ -12,6 +12,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
+import java.util.UUID;
 
 @Component
 public class JwtService {
@@ -71,4 +72,11 @@ public class JwtService {
         byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);
         return Keys.hmacShaKeyFor(keyBytes);
     }
+
+
+
+    public String generateRefreshToken() {
+        return UUID.randomUUID().toString();
+    }
+
 }

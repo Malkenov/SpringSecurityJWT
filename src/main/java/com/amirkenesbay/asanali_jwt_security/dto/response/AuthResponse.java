@@ -1,4 +1,4 @@
-package com.amirkenesbay.asanali_jwt_security.dto;
+package com.amirkenesbay.asanali_jwt_security.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
